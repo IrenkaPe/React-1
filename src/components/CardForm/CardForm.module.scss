@@ -1,0 +1,11 @@
+@import '../../styles/settings.scss';
+
+.cardForm {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
