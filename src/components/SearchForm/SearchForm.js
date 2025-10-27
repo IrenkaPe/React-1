@@ -7,12 +7,12 @@ const SearchForm = () => {
         <form className={styles.searchForm}>
             <TextInput placeholder="Search..."/>
 
-            <Button>
+            <Button type ="submit">
                 <span className="fa fa-search" />
             </Button>
             <TextInput placeholder="Add.."/>
             
-            <Button>Create</Button>
+            <Button type="button">Create</Button>
         </form>
     );
   };
