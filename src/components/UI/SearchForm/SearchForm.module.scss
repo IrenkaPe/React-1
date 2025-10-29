@@ -1,4 +1,9 @@
-@import '../../styles/settings.scss';
+@import '../../../styles/settings.scss';
+
+.searchForm {
+    display: flex;
+    justify-content: center;
+}
 
 .input {
     min-width: 200px;
@@ -9,3 +14,4 @@
     font-family: $font-text;
     border-radius: $radius;
 }
+
