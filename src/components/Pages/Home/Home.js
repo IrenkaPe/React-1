@@ -1,13 +1,10 @@
-import Hero from '../../UI/Hero/Hero'
-import SearchForm from '../../UI/SearchForm/SearchForm'
-import List from '../../UI/List/List'
+
+import Lists from '../../UI/Lists/Lists'
 
 const Home = () => {
 	return (
 		<>
-			<Hero />
-			<SearchForm />
-			<List />
+			<Lists />
 		</>
 	)
 }

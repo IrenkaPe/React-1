@@ -28,4 +28,7 @@
     text-decoration: none;
     &:hover { text-decoration: underline; }
   }
+  .linkActive {
+    color: $color-warning;
+  }
 }
