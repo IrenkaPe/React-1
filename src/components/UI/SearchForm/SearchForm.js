@@ -1,13 +1,20 @@
 import styles from './SearchForm.module.scss'
 import TextInput from '../TextInput/TextInput'
 import Button from '../Button/Button'
-import { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useState, useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { updateSearchString } from '../../../redux/store'
 
 const SearchForm = () => {
-	const [query, setQuery] = useState('')
+	
+
 	const dispatch = useDispatch()
+	const searchString = useSelector(state => state.searchString)
+	const [query, setQuery] = useState(searchString)
+
+	useEffect(() => {
+    setQuery(searchString);
+ 		 }, [searchString]); // synchronizuje lokalny stan z Reduxem
 
 	const handleSubmit = e => {
 		e.preventDefault()
@@ -22,9 +29,7 @@ const SearchForm = () => {
 			<Button type='submit'>
 				<span className='fa fa-search' />
 			</Button>
-			<TextInput placeholder='Add..' />
-
-			<Button type='button'>Create</Button>
+			
 		</form>
 	)
 }
