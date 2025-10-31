@@ -2,10 +2,12 @@
 
 .cardForm {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: 'wrap';
+
   align-items: center;
   gap: 16px;
-  padding: 20px;
+  padding: 20px 0;
   width: 100%;
-  max-width: 800px;
-  box-sizing: border-box;
+
 }
